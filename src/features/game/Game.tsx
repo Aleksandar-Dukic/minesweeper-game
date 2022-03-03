@@ -1,25 +1,42 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
-import { useAppSelector, useAppDispatch } from '../../app/hooks';
+import { useAppSelector, useAppDispatch } from "../../app/hooks";
 import {
   decrement,
   increment,
   incrementByAmount,
   incrementAsync,
-  incrementIfOdd,
-  selectCount,
-} from './counterSlice';
-import styles from './Counter.module.css';
+  /*   incrementIfOdd, */
+  selectStatus,
+} from "./gameSlice";
+import styles from "./Game.module.css";
 
-export function Counter() {
-  const count = useAppSelector(selectCount);
+export function Game() {
+  const count = useAppSelector(selectStatus);
   const dispatch = useAppDispatch();
-  const [incrementAmount, setIncrementAmount] = useState('2');
+  const [incrementAmount, setIncrementAmount] = useState("2");
 
   const incrementValue = Number(incrementAmount) || 0;
 
+  const handleOnClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+    let button = e.target as HTMLButtonElement;
+    console.log(button.value);
+  };
+
   return (
     <div>
+      <button onClick={handleOnClick} value="1">
+        L1
+      </button>
+      <button onClick={handleOnClick} value="2">
+        L2
+      </button>
+      <button onClick={handleOnClick} value="3">
+        L3
+      </button>
+      <button onClick={handleOnClick} value="4">
+        L4
+      </button>
       <div className={styles.row}>
         <button
           className={styles.button}
@@ -56,12 +73,12 @@ export function Counter() {
         >
           Add Async
         </button>
-        <button
+        {/*         <button
           className={styles.button}
           onClick={() => dispatch(incrementIfOdd(incrementValue))}
         >
           Add If Odd
-        </button>
+        </button> */}
       </div>
     </div>
   );

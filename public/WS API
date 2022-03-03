@@ -1,0 +1,5 @@
+
+help      - returns valid commands
+new L     - starts new session, L=1|2|3|4
+map       - returns the current map
+open X Y  - opens cell at X,Y coordinates - Returns [Ok, You Lose]
