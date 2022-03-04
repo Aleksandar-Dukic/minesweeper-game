@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/minesweeper-game/static/css/main.a0014074.css",
+    "main.js": "/minesweeper-game/static/js/main.1cf15439.js",
+    "index.html": "/minesweeper-game/index.html",
+    "main.a0014074.css.map": "/minesweeper-game/static/css/main.a0014074.css.map",
+    "main.1cf15439.js.map": "/minesweeper-game/static/js/main.1cf15439.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a0014074.css",
+    "static/js/main.1cf15439.js"
+  ]
+}
