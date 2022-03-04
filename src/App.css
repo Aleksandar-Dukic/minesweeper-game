@@ -26,6 +26,29 @@
   color: rgb(112, 76, 182);
 }
 
+.grid {
+  display: grid;
+  width: 5rem 0;
+  justify-content: center;
+  margin-top: 5rem;
+}
+.grid1 {
+  grid-template-rows: repeat(10, 1fr);
+  grid-template-columns: repeat(10, 21px);
+}
+.grid2 {
+  grid-template-rows: repeat(20, 1fr);
+  grid-template-columns: repeat(40, 21px);
+}
+.grid3 {
+  grid-template-rows: repeat(50, 1fr);
+  grid-template-columns: repeat(100, 21px);
+}
+.grid4 {
+  grid-template-rows: repeat(50, 1fr);
+  grid-template-columns: repeat(500, 21px);
+}
+
 @keyframes App-logo-float {
   0% {
     transform: translateY(0);
